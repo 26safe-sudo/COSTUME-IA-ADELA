@@ -1,16 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Costume IA — StyleAI Universal</title>
-    <!-- Fuentes Minimalistas -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
-    <!-- Carga nativa de Tailwind para desarrollo rápido -->
+    <title>StyleAI. — Costume IA</title>
+    <meta name="description" content="Viste como cualquier referente. IA de moda para personajes, estilos y contextos." />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              syne: ['Syne', 'sans-serif'],
+              inter: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              gold: '#C8A84B',
+            },
+          },
+        },
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #0A0A0A; }
+      ::-webkit-scrollbar { display: none; }
+      html { scrollbar-width: none; }
+    </style>
   </head>
-  <body class="bg-[#0A0A0A] text-white">
+  <body>
     <div id="root"></div>
-    <script type="module" src="/App.tsx"></script>
+    <script type="module" src="./App.jsx"></script>
   </body>
 </html>
